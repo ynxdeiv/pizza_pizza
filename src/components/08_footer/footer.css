@@ -1,0 +1,40 @@
+:root{
+    --main_color: #F9F9F9;
+    --secondary_color:#FFEBBE;
+    --accent_color: #550312;
+    --accent_color_2:#FFAF14;
+    --button_hover:#FFCB66;
+
+}
+.footer-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary_color);
+}
+
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding: 1rem;
+}
+
+.footer-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+@media (max-width: 768px) {
+    .footer-copyright {
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,65 @@
+:root{
+    --main_color: #F9F9F9;
+    --secondary_color:#FFEBBE;
+    --accent_color: #550312;
+    --accent_color_2:#FFAF14;
+    --button_hover:#FFCB66;
+
+}
+
+.PizzaLogo p{
+    font-family: Lacquer;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--accent_color);
+
+}
+.main-container{
+    background-color:var(--main_color) ;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 310px;
+    height: 138px;
+}
+
+
+.social-icons{ 
+    margin: auto;
+    display: flex;
+    gap:36px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .PizzaLogo p {
+        max-width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .main-container {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .social-container {
+        max-width: 100%;
+        height: auto;
+    }
+    .social-icons {
+        gap: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+

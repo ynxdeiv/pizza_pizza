@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+
+:root{
+    --main_color: #F9F9F9;
+    --secondary_color:#FFEBBE;
+    --accent_color: #550312;
+    --accent_color_2:#FFAF14;
+
+}
+
+.PizzaLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main_color);
+    padding: 20px;
+}
+
+.PizzaLogo h1{
+    font-family: Lacquer;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    color: var(--accent_color);
+
+}
+
+.PizzaLogo span{
+    color: var(--accent_color_2);
+}
+
+
+@media (max-width: 768px) {
+    .PizzaLogo h1{
+        font-size: 28px;
+    }
+}

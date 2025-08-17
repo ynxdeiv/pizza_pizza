@@ -1,0 +1,45 @@
+
+.cart-item-animation {
+    transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cart-item-animation:hover {
+    transform: scale(1.01);
+}
+
+.cart-item-enter {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.cart-item-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.cart-item-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.cart-item-exit-active {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+.cart-button {
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.cart-button:hover {
+    background-color: #7a041a; 
+}
+
+.cart-button:active {
+    transform: scale(0.95); 
+} 
+
+

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+:root{
+    --main_color: #F9F9F9;
+    --secondary_color:#FFEBBE;
+    --accent_color: #550312;
+    --accent_color_2:#FFAF14;
+}
+
+.checkout-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main_color);
+    padding: 20px;
+    position: relative;
+}
+
+.checkout-header h1{
+    font-family: Lacquer;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--accent_color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.checkout-header span{
+    color: var(--accent_color_2);
+}
+
+.header-button {
+    border: 1px solid var(--accent_color);
+    border-radius: 5px;
+    background-color: var(--accent_color_2);
+    font-family: Nunito;
+    width: 100px;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.header-button:hover {
+    background-color: var(--accent_color);
+    color: var(--main_color);
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .checkout-header h1{
+        font-size: 28px;
+
+    }
+    .header-button{
+        width: 60px;
+    }
+}

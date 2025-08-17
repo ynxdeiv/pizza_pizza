@@ -1,0 +1,134 @@
+{
+  "format": "custom",
+  "id": "bannerprincipal",
+  "label": "bannerPrincipal",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "tituloprincipal": {
+        "type": "StructuredText",
+        "config": {
+          "label": "tituloPrincipal",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading2"
+        }
+      },
+      "descricaoprincipal": {
+        "type": "StructuredText",
+        "config": {
+          "label": "descricaoPrincipal",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+        }
+      },
+      "textobotao": {
+        "type": "Text",
+        "config": {
+          "label": "textoBotao",
+          "placeholder": ""
+        }
+      },
+      "imagemprincipal": {
+        "type": "Image",
+        "config": {
+          "label": "imagemPrincipal",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "qualidadespizzapizza": {
+        "type": "Group",
+        "config": {
+          "label": "qualidadesPizzaPizza",
+          "repeat": true,
+          "fields": {
+            "imagemqualidades": {
+              "type": "Image",
+              "config": {
+                "label": "imagemQualidades",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "tituloqualidade": {
+              "type": "Text",
+              "config": {
+                "label": "tituloQualidade",
+                "placeholder": ""
+              }
+            },
+            "descricaoqualidade": {
+              "type": "Text",
+              "config": {
+                "label": "descricaoQualidade",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "avaliacoesclientes": {
+        "type": "Group",
+        "config": {
+          "label": "avaliaçõesClientes",
+          "repeat": true,
+          "fields": {
+            "aspas": {
+              "type": "Image",
+              "config": {
+                "label": "aspas",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "avaliacoesclientes": {
+              "type": "Text",
+              "config": {
+                "label": "avaliaçõesClientes",
+                "placeholder": ""
+              }
+            },
+            "nomecliente": {
+              "type": "Text",
+              "config": {
+                "label": "nomeCliente",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "horariosemana": {
+        "type": "Text",
+        "config": {
+          "label": "horarioSemana",
+          "placeholder": ""
+        }
+      },
+      "horariofinalsemana": {
+        "type": "Text",
+        "config": {
+          "label": "horarioFinalsemana",
+          "placeholder": ""
+        }
+      },
+      "enderecoloja": {
+        "type": "Text",
+        "config": {
+          "label": "endereçoLoja",
+          "placeholder": ""
+        }
+      },
+      "numerowhatsapp": {
+        "type": "Text",
+        "config": {
+          "label": "numeroWhatsapp",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

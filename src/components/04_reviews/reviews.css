@@ -1,0 +1,115 @@
+:root {
+  --main_color: #f9f9f9;
+  --secondary_color: #ffebbe;
+  --accent_color: #550312;
+  --accent_color_2: #ffaf14;
+  --button_hover: #ffcb66;
+}
+
+.container-review {
+  display: flex;
+  background-color: var(--secondary_color);
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.reviews-container {
+  width: 615px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+  margin: 0 !important; 
+  padding: 0 !important;
+}
+
+.slick-slide > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto; 
+}
+
+.quote-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.quote-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.review-text {
+  font-size: 1.2rem;
+  font-family: Nunito;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 0.5rem; 
+}
+
+.author {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container-review {
+    padding: 2rem 1rem;
+  }
+
+  .reviews-container {
+    width: 100%;
+  }
+
+  .slick-slide {
+    height: auto !important;
+  }
+
+  .review {
+    padding: 1rem 0.5rem;
+  }
+
+  .review-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .author {
+    font-size: 0.9rem;
+  }
+}

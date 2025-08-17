@@ -1,0 +1,153 @@
+
+
+:root {
+  --main_color: #f9f9f9;
+  --secondary_color: #ffebbe;
+  --accent_color: #550312;
+  --accent_color_2: #ffaf14;
+  --button_hover: #ffcb66;
+}
+
+
+
+
+
+.container-pizza {
+  display: flex;
+  background-color: #f5f5f5;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.display {
+  gap: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: fit-content;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.display p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--accent_color);
+}
+
+.display-pizza {
+  width: 100%;
+  max-height: fit-content;
+}
+
+.pizza-item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 288px;
+  height: 692px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 48px;
+  border: 1px solid var(--accent_color);
+  border-radius: 10px;
+}
+
+.pizza-item h3 {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+}
+.pizza-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.pizza-item span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.pizza-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-pizza {
+  color: var(--accent_color);
+  width: 164;
+  height: 41;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: var(--accent_color);
+  background-color: var(--accent_color_2);
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.button-pizza:hover {
+  background-color: var(--button_hover);
+}
+
+
+
+@media (max-width: 1024px) {
+  .pizza-item {
+    max-width: 450px;
+    height: auto;
+  }
+
+  .pizza-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .pizza-item h3 {
+    font-size: 20px;
+  }
+  .pizza-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .Toastify__toast{
+    font-size: 14px;
+    max-width: 50%;
+    
+  }
+  .pizza-item {
+    max-width: 270px;
+    height: 692px;
+  }
+
+  .pizza-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .pizza-item h3 {
+    font-size: 20px;
+  }
+  .pizza-item p {
+    font-size: 14px;
+  }
+}
+

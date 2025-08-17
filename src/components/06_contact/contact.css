@@ -1,0 +1,143 @@
+:root {
+  --main_color: #f9f9f9;
+  --secondary_color: #ffebbe;
+  --accent_color: #550312;
+  --accent_color_2: #ffaf14;
+  --button_hover: #ffcb66;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1920px;
+  height: 492px;
+  background-color: var(--secondary_color);
+}
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  gap: 100px
+}
+.horarioFuncionamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.horarios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.enderecoRestaurante {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:20px
+
+}
+
+.endereco {
+  display: flex;
+  text-align: center;
+
+}
+.numero-loja {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.formularioContato {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formularioContato h2 {
+  text-align: center;
+}
+
+.formularioContato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.formularioContato input {
+  padding: 10px;
+  width: 392px;
+  height: 38px;
+}
+
+.formularioContato textarea {
+  padding: 10px;
+  width: 392px;
+  height: 128px;
+}
+
+.formularioContato button {
+  margin-top: auto;
+  color: var(--accent_color);
+  width: 111px;
+  height: 38px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: var(--accent_color);
+  background-color: var(--accent_color_2);
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.formularioContato button:hover {
+  background-color: var(--button_hover);
+  color: var(--accent_color);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .contact-wrapper {
+    gap: 50px;
+  }
+  
+  .horarioFuncionamento, .enderecoRestaurante, .numero-loja {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formularioContato input, .formularioContato textarea {
+    width: 100%;
+    max-width: 392px;
+  }
+  
+  .formularioContato button {
+    width: 100%;
+    max-width: 111px;
+  }
+  
+}
