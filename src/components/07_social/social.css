@@ -17,26 +17,34 @@
 
 }
 .main-container{
-    background-color:var(--main_color) ;
+    background: linear-gradient(180deg, #F9F9F9 0%, #FFF 100%);
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    padding: 4rem 3rem;
 }
 
 .social-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 310px;
-    height: 138px;
+    gap: 32px;
+    animation: fadeIn 0.8s ease;
 }
 
-
 .social-icons{ 
-    margin: auto;
     display: flex;
-    gap:36px;
+    gap: 36px;
     cursor: pointer;
+}
+
+.social-icons img {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.social-icons img:hover {
+    transform: translateY(-8px) scale(1.1);
+    filter: drop-shadow(0 8px 16px rgba(85, 3, 18, 0.2));
 }
 
 

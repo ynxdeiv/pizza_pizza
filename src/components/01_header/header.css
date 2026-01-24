@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 
-
 :root{
     --main_color: #F9F9F9;
     --secondary_color:#FFEBBE;
     --accent_color: #550312;
     --accent_color_2:#FFAF14;
-
 }
 
 .PizzaLogo{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--main_color);
-    padding: 20px;
+    background: linear-gradient(135deg, #F9F9F9 0%, #FFEBBE 100%);
+    padding: 24px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(85, 3, 18, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.PizzaLogo:hover {
+    box-shadow: 0 6px 30px rgba(85, 3, 18, 0.12);
 }
 
 .PizzaLogo h1{
@@ -23,17 +31,27 @@
     font-size: 48px;
     line-height: 100%;
     letter-spacing: 0%;
-
     color: var(--accent_color);
+    animation: slideInLeft 0.6s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
+.PizzaLogo h1:hover {
+    transform: scale(1.05);
 }
 
 .PizzaLogo span{
     color: var(--accent_color_2);
+    display: inline-block;
+    animation: pulse 2s ease-in-out infinite;
 }
 
-
 @media (max-width: 768px) {
+    .PizzaLogo {
+        padding: 16px 20px;
+    }
+    
     .PizzaLogo h1{
         font-size: 28px;
     }

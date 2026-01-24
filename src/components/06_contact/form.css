@@ -9,16 +9,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-
-}
-
-.form-group input, textarea {
-    border-radius: 5px;
+  gap: 16px;
+  width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  border-radius: 12px;
+}
+
+.error-message {
+  color: #D32F2F;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-left: 4px;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+.input-error {
+  border-color: #D32F2F !important;
+  background: #FFEBEE !important;
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 4px rgba(211, 47, 47, 0.1) !important;
 }
