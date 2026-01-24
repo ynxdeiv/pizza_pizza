@@ -18,95 +18,232 @@
   align-items: center;
   justify-content: space-around;
   max-width: 1920px;
-  height: 492px;
-  background-color: var(--secondary_color);
+  min-height: 492px;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #F9F9F9 0%, #FFEBBE 100%);
+  position: relative;
 }
 .contact-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  text-align: justify;
-  gap: 100px
+  gap: 60px;
+  animation: slideInLeft 0.8s ease;
 }
+
 .horarioFuncionamento {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.horarioFuncionamento:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 24px rgba(85, 3, 18, 0.12);
+}
+
+.horarioFuncionamento img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .horarios {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+}
+
+.horarios p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .enderecoRestaurante {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap:20px
-
+  gap: 20px;
 }
 
 .endereco {
   display: flex;
-  text-align: center;
-
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
+
+.endereco:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 24px rgba(85, 3, 18, 0.12);
+}
+
+.endereco img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.endereco p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 .numero-loja {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.numero-loja:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 24px rgba(85, 3, 18, 0.12);
+}
+
+.numero-loja img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.numero-loja p {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
 }
 
 .formularioContato {
-  gap: 20px;
+  gap: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(85, 3, 18, 0.12);
+  animation: slideInRight 0.8s ease;
 }
 
 .formularioContato h2 {
   text-align: center;
+  color: var(--accent_color);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .formularioContato form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   align-items: center;
+  width: 100%;
 }
 
 .formularioContato input {
-  padding: 10px;
+  padding: 14px 18px;
   width: 392px;
-  height: 38px;
+  height: 48px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  font-family: Nunito;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #FAFAFA;
+}
+
+.formularioContato input:focus {
+  outline: none;
+  border-color: var(--accent_color_2);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(255, 175, 20, 0.1);
+  transform: translateY(-2px);
 }
 
 .formularioContato textarea {
-  padding: 10px;
+  padding: 14px 18px;
   width: 392px;
   height: 128px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  font-family: Nunito;
+  font-size: 15px;
+  resize: vertical;
+  transition: all 0.3s ease;
+  background: #FAFAFA;
+}
+
+.formularioContato textarea:focus {
+  outline: none;
+  border-color: var(--accent_color_2);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(255, 175, 20, 0.1);
+  transform: translateY(-2px);
 }
 
 .formularioContato button {
-  margin-top: auto;
-  color: var(--accent_color);
-  width: 111px;
-  height: 38px;
-  border-radius: 5px;
-  border-width: 1px;
-  border-color: var(--accent_color);
-  background-color: var(--accent_color_2);
+  margin-top: 8px;
+  color: white;
+  width: 140px;
+  height: 48px;
+  border-radius: 24px;
+  border: 2px solid var(--accent_color);
+  background: linear-gradient(135deg, var(--accent_color_2) 0%, #FFB830 100%);
   font-family: Nunito;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 175, 20, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.formularioContato button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.formularioContato button:hover::before {
+  left: 100%;
+}
+
+.formularioContato button:hover {
+  background: linear-gradient(135deg, #FFB830 0%, var(--accent_color_2) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 175, 20, 0.5);
+}
+
+.formularioContato button:active {
+  transform: translateY(0);
+}
+
+.formularioContato button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .formularioContato button:hover {
